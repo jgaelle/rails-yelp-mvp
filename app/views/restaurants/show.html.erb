@@ -1,0 +1,12 @@
+<div class="container mt-5">
+  <h1><%= @restaurant.name %> <small>(<%= @restaurant.category %>)</small></h1>
+  <ul>
+    <li>Address: <%= @restaurant.address %></li>
+    <li>Phone_number : <%= @restaurant.phone_number %></li>
+
+
+  </ul>
+<%= link_to "add a review", new_restaurant_review_path(@restaurant) %>
+
+  <%= link_to "Back to all restaurants", restaurants_path %>
+</div>
